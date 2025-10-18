@@ -21,7 +21,7 @@ I used this video here as a reference to help me set this [video](https://www.yo
 
 2. **Create a New Virtual Machine**  
    Open VirtualBox → click **New**.  
-   ![Step 2: Create VM](step2_vm.png)
+   ![Step 2: Create VM](assets/step2_vm.png)
 
 3. **Skip ISO Selection**  
    When asked for an installation ISO, **choose “Skip”** or **continue without an ISO**.
@@ -33,7 +33,7 @@ I used this video here as a reference to help me set this [video](https://www.yo
 
 5. **Attach Existing Disk**  
    In the storage configuration, select **“Use an existing virtual hard disk file”**.  
-   ![Step 5: Select disk](step5_vm.png)
+   ![Step 5: Select disk](assets/step5_vm.png)
 
 6. **Choose the OpenWrt Image**  
    Click the **yellow file icon** → **Add** → navigate to where the extracted `.img` file is located.  
