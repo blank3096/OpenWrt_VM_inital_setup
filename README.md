@@ -69,11 +69,11 @@ This setup has two parts
 ## **Steps**: 
 
 *In virtual box*
-1. open files and press network manager![[assets/step7_vm.png]]
-2. set the second IP in the subnet for the host only network, name it whatever. also make sure to disable the dhcp server in the tab seen in the picture![[assets/step8_vm.png]]
-3. go to the Network settings of the VM Enable adapter 1 and follow this config this will be our connection between HOST and VM![[assets/step9_vm.png]]
-4. Enable the second adapter  , this will be the WAN and it should be internet facing. you can set this to NAT or bridge it to an internet facing adapter as I did in this image![[assets/step10_vm.png]]
-5. ***Optional***: I also bridged the Host's ethernet adapter since I might connect something to it later on![[assets/step11_vm.png]]
+1. open files and press network manager![network1](assets/step10_vm.png)
+2. set the second IP in the subnet for the host only network, name it whatever. also make sure to disable the dhcp server in the tab seen in the picture![network2](assets/step8_vm.png)
+3. go to the Network settings of the VM Enable adapter 1 and follow this config this will be our connection between HOST and VM![Network3](assets/step9_vm.png)
+4. Enable the second adapter  , this will be the WAN and it should be internet facing. you can set this to NAT or bridge it to an internet facing adapter as I did in this image![Network4](assets/step10_vm.png)
+5. ***Optional***: I also bridged the Host's ethernet adapter since I might connect something to it later on![assets/step11_vm.png](assets/step11_vm.png)
 
 With this the Virtual Box side of Networking is done. 
 
@@ -167,7 +167,7 @@ server = 1.1.1.1
 **View the IP addresses of the interfaces**
 
 1. `ip a` produces the following
-![[assets/IP_addresses.png]]
+![IP](assets/IP_addresses.png)
 * make sure that one interface is on the same subnet as your internet facing NIC or it has an IP assigned inside the NAT subnet if you used NAT
 * make sure that the first IP of the Host-only network belongs to the br-lan interface
 * Finally, as reflected in the /etc/config/network file eth0 says that its master is br-lan
@@ -175,10 +175,10 @@ server = 1.1.1.1
 2. `ping` is the next tool to use to make sure  things are connected.
 we first `ping 1.1.1.1` to make sure internet is connected ( no idea what this DUP! , why am I getting duplicates from the response but I am assuming its related to the idea that our internet facing NIC is bridged)
 
-we next `ping google.com` or any other website to make sure the DNS works![[assets/ping_status.png]]
+we next `ping google.com` or any other website to make sure the DNS works![ping](assets/ping_status.png)
 
 we finally check the LAN config by doing a
-`uci show network.lan`![[assets/LAN_NETWORK_confs.png]]
+`uci show network.lan`![LAN](assets/LAN_NETWORK_confs.png)]
 and generally (I think ) `uci show` shows all configs but its too much and I am not bothered to read all of it now, but if there is some mistake somewhere you will have to sift through its output with `grep` 
 
 ---
