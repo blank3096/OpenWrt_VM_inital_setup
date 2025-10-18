@@ -12,7 +12,7 @@ It’s mainly a personal note so I don’t forget the setup steps and configurat
 - OpenWrt x86_64 image file (downloaded from [OpenWrt releases](https://downloads.openwrt.org/releases/24.10.3/targets/x86/64/))
 
 ---
-I used this video here as a reference to help me set this [video](https://www.youtube.com/watch?v=4lgnqKy5qfU&list=WL&index=3) up. you can watch for reference.
+This [video](https://www.youtube.com/watch?v=4lgnqKy5qfU&list=WL&index=3) here is a good reference to help set this  up. I recommend watching it
 
 ## ⚙️ Setup Steps
 
