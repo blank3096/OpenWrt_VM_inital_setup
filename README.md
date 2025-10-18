@@ -192,4 +192,4 @@ for good measure you could reboot and do
 
 * The webui is at `192.168.60.1`
 * The Host and VM are connected through a bridged adapter to a Host-only network in the subnet `192.168.60.x/24` 
-* SSH to the router is done by using           	`ssh root@192.168.60.1 -p 4533` , no password required
+* SSH to the router is done by using           	`ssh root@192.168.60.1 -p 45333` , no password required
