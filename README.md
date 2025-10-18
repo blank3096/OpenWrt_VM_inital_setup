@@ -1,4 +1,5 @@
 # Basic OpenWrt VM Configuration (VirtualBox)
+One can simple clone the repo and arrive at a working setup but I left how I arrived at this point for my reference
 
 This document is a quick reference for setting up an OpenWrt virtual machine in **VirtualBox**.  
 It’s mainly a personal note so I don’t forget the setup steps and configurations.
